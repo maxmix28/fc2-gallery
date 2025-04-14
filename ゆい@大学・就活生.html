@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ゆい@大学・就活生 の作品一覧</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    .entry {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 30px;
+      position: relative;
+      transition: box-shadow 0.3s;
+    }
+    .entry:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .fav-star {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s;
+    }
+    .fav-star:hover {
+      transform: scale(1.2);
+    }
+    .fav-star.faved {
+      color: gold;
+    }
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 5px;
+    }
+    .gallery a {
+      scroll-snap-align: start;
+      flex-shrink: 0;
+    }
+    .gallery a img {
+      width: 180px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .gallery a img:hover {
+      transform: scale(1.05);
+    }
+    .links {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .links a:hover {
+      color: #0056b3;
+    }
+    .controls {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    @media (max-width: 600px) {
+      .gallery a img {
+        width: 45vw;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>ゆい@大学・就活生 の作品一覧</h1>
+<div class="controls">
+  <button onclick="toggleFavoritesOnly()">お気に入りだけ表示</button>
+</div>
+<div class="entry" data-id="2470135" id="fc2-2470135">
+  <div class="fav-star" onclick="toggleFav('2470135')">&#9734;</div>
+  <h2>[1/2] 【ゆいの平日】リモバイをつけて学校へ、そのまま一日を過ごし放課後トイレで発散</h2>
+  <div class="gallery">
+    <a data-fancybox="gallery-2470135" href="https://contents-thumbnail2.fc2.com/w500/storage59000.contents.fc2.com/file/375/37462923/1638024028.31.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage59000.contents.fc2.com/file/375/37462923/1638024028.31.jpeg" alt="サムネイル"></a>
+    <a data-fancybox="gallery-2470135" href="https://contents-thumbnail2.fc2.com/w500/storage59000.contents.fc2.com/file/375/37462923/1638024027.49.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage59000.contents.fc2.com/file/375/37462923/1638024027.49.jpeg" alt="サムネイル"></a>
+    <a data-fancybox="gallery-2470135" href="https://contents-thumbnail2.fc2.com/w500/storage60000.contents.fc2.com/file/375/37462923/1638024027.16.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage60000.contents.fc2.com/file/375/37462923/1638024027.16.jpeg" alt="サムネイル"></a>
+    <a data-fancybox="gallery-2470135" href="https://contents-thumbnail2.fc2.com/w500/storage60000.contents.fc2.com/file/375/37462923/1638024041.92.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage60000.contents.fc2.com/file/375/37462923/1638024041.92.jpeg" alt="サムネイル"></a>
+    <a data-fancybox="gallery-2470135" href="https://contents-thumbnail2.fc2.com/w500/storage60000.contents.fc2.com/file/375/37462923/1638024045.83.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage60000.contents.fc2.com/file/375/37462923/1638024045.83.jpeg" alt="サムネイル"></a>
+  </div>
+  <div class="links">
+    <a href="http://javten.com/video/1059144/id2470135/%E3%80%90%E3%82%86%E3%81%84%E3%81%AE%E5%B9%B3%E6%97%A5%E3%80%91%E3%83%AA%E3%83%A2%E3%83%90%E3%82%A4%E3%82%92%E3%81%A4%E3%81%91%E3%81%A6%E5%AD%A6%E6%A0%A1%E3%81%B8%E3%80%81%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E4%B8%80%E6%97%A5%E3%82%92%E9%81%8E%E3%81%94%E3%81%97%E6%94%BE%E8%AA%B2%E5%BE%8C%E3%83%88%E3%82%A4%E3%83%AC%E3%81%A7%E7%99%BA%E6%95%A3" target="_blank">Javtenで見る</a>
+    <a href="https://missav.ai/ja/fc2-ppv-2470135" target="_blank">MissAVで見る</a>
+  </div>
+</div>
+<hr>
+<div class="entry" data-id="2389903" id="fc2-2389903">
+  <div class="fav-star" onclick="toggleFav('2389903')">&#9734;</div>
+  <h2>[2/2] 【ヤバいやつ】大学の大事なリモート面談中にバレないようにオナニー</h2>
+  <div class="gallery">
+    <a data-fancybox="gallery-2389903" href="https://contents-thumbnail2.fc2.com/w500/storage61000.contents.fc2.com/file/375/37462923/1635591083.45.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage61000.contents.fc2.com/file/375/37462923/1635591083.45.jpeg" alt="サムネイル"></a>
+    <a data-fancybox="gallery-2389903" href="https://contents-thumbnail2.fc2.com/w500/storage61000.contents.fc2.com/file/375/37462923/1635591090.14.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage61000.contents.fc2.com/file/375/37462923/1635591090.14.jpeg" alt="サムネイル"></a>
+    <a data-fancybox="gallery-2389903" href="https://contents-thumbnail2.fc2.com/w500/storage59000.contents.fc2.com/file/375/37462923/1635591085.13.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage59000.contents.fc2.com/file/375/37462923/1635591085.13.jpeg" alt="サムネイル"></a>
+    <a data-fancybox="gallery-2389903" href="https://contents-thumbnail2.fc2.com/w500/storage59000.contents.fc2.com/file/375/37462923/1635591087.9.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage59000.contents.fc2.com/file/375/37462923/1635591087.9.jpeg" alt="サムネイル"></a>
+    <a data-fancybox="gallery-2389903" href="https://contents-thumbnail2.fc2.com/w500/storage61000.contents.fc2.com/file/375/37462923/1635591085.89.jpeg"><img src="https://contents-thumbnail2.fc2.com/w500/storage61000.contents.fc2.com/file/375/37462923/1635591085.89.jpeg" alt="サムネイル"></a>
+  </div>
+  <div class="links">
+    <a href="http://javten.com/video/1037701/id2389903/%E3%80%90%E3%83%A4%E3%83%90%E3%81%84%E3%82%84%E3%81%A4%E3%80%91%E5%A4%A7%E5%AD%A6%E3%81%AE%E5%A4%A7%E4%BA%8B%E3%81%AA%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E9%9D%A2%E8%AB%87%E4%B8%AD%E3%81%AB%E3%83%90%E3%83%AC%E3%81%AA%E3%81%84%E3%82%88%E3%81%86%E3%81%AB%E3%82%AA%E3%83%8A%E3%83%8B%E3%83%BC" target="_blank">Javtenで見る</a>
+    <a href="https://missav.ai/ja/fc2-ppv-2389903" target="_blank">MissAVで見る</a>
+  </div>
+</div>
+<hr>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+function toggleFav(id) {
+  const key = 'fav-' + id;
+  const current = localStorage.getItem(key) === 'true';
+  localStorage.setItem(key, !current);
+  updateStars();
+}
+
+function updateStars() {
+  document.querySelectorAll('.entry').forEach(entry => {
+    const id = entry.dataset.id;
+    const star = entry.querySelector('.fav-star');
+    const isFav = localStorage.getItem('fav-' + id) === 'true';
+    star.innerHTML = isFav ? '★' : '☆';
+    star.classList.toggle('faved', isFav);
+  });
+}
+
+function toggleFavoritesOnly() {
+  const onlyFav = document.body.classList.toggle('show-favs');
+  document.querySelectorAll('.entry').forEach(entry => {
+    const id = entry.dataset.id;
+    const isFav = localStorage.getItem('fav-' + id) === 'true';
+    if (onlyFav && !isFav) {
+      entry.style.display = 'none';
+    } else {
+      entry.style.display = '';
+    }
+  });
+}
+
+updateStars();
+</script>
+</body></html>
