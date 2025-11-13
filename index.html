@@ -58,13 +58,42 @@
       font-weight: bold;
       margin-bottom: 10px;
     }
+    .input-wrap {
+      position: relative;
+      width: 100%;
+    }
+    .input-wrap input {
+      width: 100%;
+      padding: 10px;
+      padding-right: 36px; /* クリアボタンの分だけ広げる */
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .clear-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 20px;
+      color: #888;
+      display: none; /* 文字が入力された時だけ表示 */
+      user-select: none;
+      font-weight: bold;
+    }
+    .clear-btn:hover {
+      color: #000;
+    }
   </style>
 </head>
 <body>
   <div id="search-container">
     <h1>全タイトル検索</h1>
-    <div id="count-display">全 9826 件</div>
-    <input type="text" id="search" placeholder="タイトルで検索..." onkeyup="filterList()">
+    <div id="count-display">全 9833 件</div>
+    <div class="input-wrap">
+      <input type="text" id="search" placeholder="タイトルで検索..." onkeyup="filterList(); toggleClearBtn()">
+      <span class="clear-btn" onclick="clearInput()">×</span>
+    </div>
     <div>
       <button class="toggle-btn" onclick="toggleOrder('name')">ファイル名順</button>
       <button class="toggle-btn" onclick="toggleOrder('mtime')">更新日時順</button>
@@ -3887,6 +3916,8 @@
 <li class='title-entry' data-file='アヘピース(@AhePeace).html' data-id='4175956'><div style='padding-left: 10px'><a href='アヘピース(@AhePeace).html#fc2-4175956'>[11/13] 数量限定価格!!元旦那大好き博多美人妻と3泊4日の種付け不倫旅行第2弾！騎乗位の腰振りで**的に搾り取られ生中出しwチャイナコスを着た人妻に甘サドで責められるw</a><span class='seller-name'>（アヘピース(@AhePeace).html）</span></div></li>
 <li class='title-entry' data-file='アヘピース(@AhePeace).html' data-id='3158839'><div style='padding-left: 10px'><a href='アヘピース(@AhePeace).html#fc2-3158839'>[12/13] 数量限定割引。お子さんにバレないよう声を我慢するけど→快楽に負けて声を我慢できずにメス顔ダブルピースをお子さんに晒すw</a><span class='seller-name'>（アヘピース(@AhePeace).html）</span></div></li>
 <li class='title-entry' data-file='アヘピース(@AhePeace).html' data-id='3157073'><div style='padding-left: 10px'><a href='アヘピース(@AhePeace).html#fc2-3157073'>[13/13] 数量限定割引！博多美人幼妻と一日エロエロデート後編。リモバイデートでムラムラした人妻の甘サド小悪魔プレイ。強制生搾精からのニヤニヤ顔でWピース</a><span class='seller-name'>（アヘピース(@AhePeace).html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('エステティシャン募集！.html')">エステティシャン募集！.html (1件)</li>
+<li class='title-entry' data-file='エステティシャン募集！.html' data-id='4790694'><div style='padding-left: 10px'><a href='エステティシャン募集！.html#fc2-4790694'>[1/1] 【無】リアル！エステ実技実習で生ハメ、中出し！</a><span class='seller-name'>（エステティシャン募集！.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('エロイスト＠車内フェラ口内発.html')">エロイスト＠車内フェラ口内発.html (54件)</li>
 <li class='title-entry' data-file='エロイスト＠車内フェラ口内発.html' data-id='4653223'><div style='padding-left: 10px'><a href='エロイスト＠車内フェラ口内発.html#fc2-4653223'>[1/54] ６人分大量顔射！フェラと手コキで集団チンコを次々発射、お掃除フェラまで忘れずに♪蜜柑ちゃんVol.1</a><span class='seller-name'>（エロイスト＠車内フェラ口内発.html）</span></div></li>
 <li class='title-entry' data-file='エロイスト＠車内フェラ口内発.html' data-id='4621202'><div style='padding-left: 10px'><a href='エロイスト＠車内フェラ口内発.html#fc2-4621202'>[2/54] 【11発射‼ファン感謝オフ会】若菜ちゃん＆ひなたちゃんがフェラ抜きでおもてなし！Hなゲームの勝者にはNNのご褒美も</a><span class='seller-name'>（エロイスト＠車内フェラ口内発.html）</span></div></li>
@@ -9476,6 +9507,11 @@
 <li class='title-entry' data-file='至高ぷれみあ.html' data-id='3190560'><div style='padding-left: 10px'><a href='至高ぷれみあ.html#fc2-3190560'>[69/71] 至高ぷれみあ！スペシャルBOX１</a><span class='seller-name'>（至高ぷれみあ.html）</span></div></li>
 <li class='title-entry' data-file='至高ぷれみあ.html' data-id='3191228'><div style='padding-left: 10px'><a href='至高ぷれみあ.html#fc2-3191228'>[70/71] 至高ぷれみあ！スペシャルBOX３</a><span class='seller-name'>（至高ぷれみあ.html）</span></div></li>
 <li class='title-entry' data-file='至高ぷれみあ.html' data-id='3189943'><div style='padding-left: 10px'><a href='至高ぷれみあ.html#fc2-3189943'>[71/71] みおちゃん最新作を含むプレミアム福袋</a><span class='seller-name'>（至高ぷれみあ.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('舌フェチの楽園.html')">舌フェチの楽園.html (4件)</li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='2714921'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-2714921'>[1/4] 【即プレイ】美人音大生みくと即プレイ本番OPで射精！彼氏できたのでエッチだめです…【東京美女の言葉責め手コキ】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1947604'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1947604'>[2/4] 【奇跡の本番OP】激カワ新人えりの本番オプションで昇天！ちょっと目つぶっててください…【東京美女の言葉責め手コキ】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1913436'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1913436'>[3/4] 【東京美女の言葉責め手コキ】激カワ新人えりの素股オプションで射精！ほんとにエッチしてるみた～い【高級オナクラ隠し撮り】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1653846'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1653846'>[4/4] 【東京美女の言葉責め手コキ】激カワ新人えり（22歳）のイチャイチャ手コキで射精！まだ出しちゃダメですよ～【高級オナクラ隠し撮り】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('艶.html')">艶.html (19件)</li>
 <li class='title-entry' data-file='艶.html' data-id='2493049'><div style='padding-left: 10px'><a href='艶.html#fc2-2493049'>[1/19] 12月限定1480【モ無】色白スレンダー、スタイル良好妻。借金のカタに逃げるすべなくAVを撮られ、知らない男達に連続中出しされる。</a><span class='seller-name'>（艶.html）</span></div></li>
 <li class='title-entry' data-file='艶.html' data-id='2522153'><div style='padding-left: 10px'><a href='艶.html#fc2-2522153'>[2/19] 12月限定1480【モ無】スレンダーDカップで生意気な借金妻。利息分回収のため無理やりホテルに連れ込み、連続中出し。</a><span class='seller-name'>（艶.html）</span></div></li>
@@ -9502,6 +9538,8 @@
 <li class='title-entry' data-file='芸能きぞく.html' data-id='3418275'><div style='padding-left: 10px'><a href='芸能きぞく.html#fc2-3418275'>[3/5] ※Icup専属レイヤー【1日のみプレミア限定販売】ああ*性あふれるIcup神乳おとは様。玄関で即尺パイズリから3連続パイズリ、素人童貞くん授乳手コキでリアル射精※特典ご褒美SEX</a><span class='seller-name'>（芸能きぞく.html）</span></div></li>
 <li class='title-entry' data-file='芸能きぞく.html' data-id='3268602'><div style='padding-left: 10px'><a href='芸能きぞく.html#fc2-3268602'>[4/5] ※限定公開【Hcup巨乳】パイズリ好き以外は絶対に購入しないで下さい。専属新人ももちゃん限定復活。すでに過去作購入できません</a><span class='seller-name'>（芸能きぞく.html）</span></div></li>
 <li class='title-entry' data-file='芸能きぞく.html' data-id='1937962'><div style='padding-left: 10px'><a href='芸能きぞく.html#fc2-1937962'>[5/5] 【国宝解禁】芸能人Gカップパイズリ、ネカフェで口内発射。なんとか交渉の末はじめての顔出し・中〇し承諾もらいました※閲覧注意</a><span class='seller-name'>（芸能きぞく.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('莉月（りず）.html')">莉月（りず）.html (1件)</li>
+<li class='title-entry' data-file='莉月（りず）.html' data-id='4787900'><div style='padding-left: 10px'><a href='莉月（りず）.html#fc2-4787900'>[1/1] M男くんを寸止めプレイ！ 手コキと乳首責めに悶絶♡ 痴女ま⚪︎この射精管理で最後は手コキルーインドオーガズム</a><span class='seller-name'>（莉月（りず）.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('親父ナンパ師.html')">親父ナンパ師.html (1件)</li>
 <li class='title-entry' data-file='親父ナンパ師.html' data-id='3037252'><div style='padding-left: 10px'><a href='親父ナンパ師.html#fc2-3037252'>[1/1] 【無·流出】正真正銘アイドル激ヤバ映像★最初で最後の作品★彼女が犯した一夜限りの過ち</a><span class='seller-name'>（親父ナンパ師.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('車フェラ大好き1.html')">車フェラ大好き1.html (174件)</li>
@@ -9922,6 +9960,8 @@
 <li class='title-entry' data-file='進撃のごろうまる.html' data-id='1206609'><div style='padding-left: 10px'><a href='進撃のごろうまる.html#fc2-1206609'>[106/108] 【個撮6】県立K②現役モデルパイパン③ また生中出し!!</a><span class='seller-name'>（進撃のごろうまる.html）</span></div></li>
 <li class='title-entry' data-file='進撃のごろうまる.html' data-id='1168657'><div style='padding-left: 10px'><a href='進撃のごろうまる.html#fc2-1168657'>[107/108] 【個撮4】県立K2現役モデルパイパン② 野外露出で生ハメ</a><span class='seller-name'>（進撃のごろうまる.html）</span></div></li>
 <li class='title-entry' data-file='進撃のごろうまる.html' data-id='1158758'><div style='padding-left: 10px'><a href='進撃のごろうまる.html#fc2-1158758'>[108/108] 【個撮2】県立K2現役モデル 生中出し パイパン超スレンダー体型</a><span class='seller-name'>（進撃のごろうまる.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('銀座357＠会員制メンズサロン.html')">銀座357＠会員制メンズサロン.html (1件)</li>
+<li class='title-entry' data-file='銀座357＠会員制メンズサロン.html' data-id='1656149'><div style='padding-left: 10px'><a href='銀座357＠会員制メンズサロン.html#fc2-1656149'>[1/1] ＼レビュー特典あり！／睾丸マッサージ Vol.13（ジャップカサイ）【会員制メンズサロン 銀座357】</a><span class='seller-name'>（銀座357＠会員制メンズサロン.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('関西素人ハメ撮り.html')">関西素人ハメ撮り.html (111件)</li>
 <li class='title-entry' data-file='関西素人ハメ撮り.html' data-id='3663669'><div style='padding-left: 10px'><a href='関西素人ハメ撮り.html#fc2-3663669'>[1/111] 【無】【ハメ撮り390】国宝級の顔面偏差値の美女がさらに美しくなって帰ってきた！欲求不満でエロさもパワーアップ♡神クビレ＆美巨乳におじさん大興奮♡まんこの奥までしっかり中出し二連続！※特典高画質版</a><span class='seller-name'>（関西素人ハメ撮り.html）</span></div></li>
 <li class='title-entry' data-file='関西素人ハメ撮り.html' data-id='3689045'><div style='padding-left: 10px'><a href='関西素人ハメ撮り.html#fc2-3689045'>[2/111] 【無】【ゴックン価格】普通の女子が一番エロい！真面目で清楚なスレンダー美女とのハメ撮り！おじさんに精子を飲まされて二回も中出しされてしまい闇落ち確定！※特典高画質版</a><span class='seller-name'>（関西素人ハメ撮り.html）</span></div></li>
@@ -10111,6 +10151,17 @@
 <li class='title-entry' data-file='ｍ男のアロマ.html' data-id='1555497'><div style='padding-left: 10px'><a href='ｍ男のアロマ.html#fc2-1555497'>[1/1] 先着50本限定半額！【隠し撮り】ｍ男専用アロマ 唾液手コキ 乳首舐め パンティー見せ 射精後弄り 極上接待【エロカワ小悪魔・三上（20歳）２回目】</a><span class='seller-name'>（ｍ男のアロマ.html）</span></div></li>
 </ul>
 <ul class="titleList" data-order="mtime" style="display:none;">
+<li class='file-name' onclick="toggleTitles('銀座357＠会員制メンズサロン.html')">銀座357＠会員制メンズサロン.html (1件)</li>
+<li class='title-entry' data-file='銀座357＠会員制メンズサロン.html' data-id='1656149'><div style='padding-left: 10px'><a href='銀座357＠会員制メンズサロン.html#fc2-1656149'>[1/1] ＼レビュー特典あり！／睾丸マッサージ Vol.13（ジャップカサイ）【会員制メンズサロン 銀座357】</a><span class='seller-name'>（銀座357＠会員制メンズサロン.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('莉月（りず）.html')">莉月（りず）.html (1件)</li>
+<li class='title-entry' data-file='莉月（りず）.html' data-id='4787900'><div style='padding-left: 10px'><a href='莉月（りず）.html#fc2-4787900'>[1/1] M男くんを寸止めプレイ！ 手コキと乳首責めに悶絶♡ 痴女ま⚪︎この射精管理で最後は手コキルーインドオーガズム</a><span class='seller-name'>（莉月（りず）.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('舌フェチの楽園.html')">舌フェチの楽園.html (4件)</li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='2714921'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-2714921'>[1/4] 【即プレイ】美人音大生みくと即プレイ本番OPで射精！彼氏できたのでエッチだめです…【東京美女の言葉責め手コキ】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1947604'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1947604'>[2/4] 【奇跡の本番OP】激カワ新人えりの本番オプションで昇天！ちょっと目つぶっててください…【東京美女の言葉責め手コキ】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1913436'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1913436'>[3/4] 【東京美女の言葉責め手コキ】激カワ新人えりの素股オプションで射精！ほんとにエッチしてるみた～い【高級オナクラ隠し撮り】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1653846'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1653846'>[4/4] 【東京美女の言葉責め手コキ】激カワ新人えり（22歳）のイチャイチャ手コキで射精！まだ出しちゃダメですよ～【高級オナクラ隠し撮り】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('エステティシャン募集！.html')">エステティシャン募集！.html (1件)</li>
+<li class='title-entry' data-file='エステティシャン募集！.html' data-id='4790694'><div style='padding-left: 10px'><a href='エステティシャン募集！.html#fc2-4790694'>[1/1] 【無】リアル！エステ実技実習で生ハメ、中出し！</a><span class='seller-name'>（エステティシャン募集！.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('SPERMAGIC@素人のフェラとごっくん.html')">SPERMAGIC@素人のフェラとごっくん.html (20件)</li>
 <li class='title-entry' data-file='SPERMAGIC@素人のフェラとごっくん.html' data-id='4792779'><div style='padding-left: 10px'><a href='SPERMAGIC@素人のフェラとごっくん.html#fc2-4792779'>[1/6] [大射輪]航空会社勤務CA美緒ちゃん(23)わずか20分で合計12発(顔射9発中出し3発）の乱射パーティ</a><span class='seller-name'>（SPERMAGIC@素人のフェラとごっくん.html）</span></div></li>
 <li class='title-entry' data-file='SPERMAGIC@素人のフェラとごっくん.html' data-id='4788437'><div style='padding-left: 10px'><a href='SPERMAGIC@素人のフェラとごっくん.html#fc2-4788437'>[2/6] [破壊的射精/20日溜め]喉奥直撃13ドク固形物黄ばみ混濁の超大量フェラ抜きごっくん。完全ノーカット射精部位完全版</a><span class='seller-name'>（SPERMAGIC@素人のフェラとごっくん.html）</span></div></li>
@@ -20156,14 +20207,20 @@
 <li class='title-entry' data-file='☆パイきんぐ☆.html' data-id='1870421'><div style='padding-left: 10px'><a href='☆パイきんぐ☆.html#fc2-1870421'>[1/1] 顔面紅潮！目隠しとお小遣いで釣った19歳・純情女に中出し</a><span class='seller-name'>（☆パイきんぐ☆.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('ゆきちくんⅡ.html')">ゆきちくんⅡ.html (1件)</li>
 <li class='title-entry' data-file='ゆきちくんⅡ.html' data-id='4548559'><div style='padding-left: 10px'><a href='ゆきちくんⅡ.html#fc2-4548559'>[1/1] 【個撮60】(爆乳注意)夫婦経営の食堂オーナー嫁と閉店後に寝取り生SEX【おまけ付】</a><span class='seller-name'>（ゆきちくんⅡ.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('エステティシャン募集！.html')">エステティシャン募集！.html (1件)</li>
+<li class='title-entry' data-file='エステティシャン募集！.html' data-id='4790694'><div style='padding-left: 10px'><a href='エステティシャン募集！.html#fc2-4790694'>[1/1] 【無】リアル！エステ実技実習で生ハメ、中出し！</a><span class='seller-name'>（エステティシャン募集！.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('オナ狂.html')">オナ狂.html (1件)</li>
 <li class='title-entry' data-file='オナ狂.html' data-id='4577373'><div style='padding-left: 10px'><a href='オナ狂.html#fc2-4577373'>[1/1] ネカフェ派遣専用オナクラ呼んでみた。生巨乳お触り・１５分手コキコース・新宿・美玲さん</a><span class='seller-name'>（オナ狂.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('フェラララ!!.html')">フェラララ!!.html (1件)</li>
 <li class='title-entry' data-file='フェラララ!!.html' data-id='1443546'><div style='padding-left: 10px'><a href='フェラララ!!.html#fc2-1443546'>[1/1] おしゃぶり中毒な変態娘の濃厚クチマンコ奉仕ごっくんフェラ【おしゃぶりNo.37】</a><span class='seller-name'>（フェラララ!!.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('倩鬼@とある地方のNTR専門士.html')">倩鬼@とある地方のNTR専門士.html (1件)</li>
 <li class='title-entry' data-file='倩鬼@とある地方のNTR専門士.html' data-id='1563639'><div style='padding-left: 10px'><a href='倩鬼@とある地方のNTR専門士.html#fc2-1563639'>[1/1] [個人撮影] ガチ素人・ガチ人妻NTR・ヤラセなし ユキ（36歳） Vol.03 遠隔バイブを仕込んでついに屋外へ！トイレでラブホで中出し懇願を隠し撮り！</a><span class='seller-name'>（倩鬼@とある地方のNTR専門士.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('莉月（りず）.html')">莉月（りず）.html (1件)</li>
+<li class='title-entry' data-file='莉月（りず）.html' data-id='4787900'><div style='padding-left: 10px'><a href='莉月（りず）.html#fc2-4787900'>[1/1] M男くんを寸止めプレイ！ 手コキと乳首責めに悶絶♡ 痴女ま⚪︎この射精管理で最後は手コキルーインドオーガズム</a><span class='seller-name'>（莉月（りず）.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('親父ナンパ師.html')">親父ナンパ師.html (1件)</li>
 <li class='title-entry' data-file='親父ナンパ師.html' data-id='3037252'><div style='padding-left: 10px'><a href='親父ナンパ師.html#fc2-3037252'>[1/1] 【無·流出】正真正銘アイドル激ヤバ映像★最初で最後の作品★彼女が犯した一夜限りの過ち</a><span class='seller-name'>（親父ナンパ師.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('銀座357＠会員制メンズサロン.html')">銀座357＠会員制メンズサロン.html (1件)</li>
+<li class='title-entry' data-file='銀座357＠会員制メンズサロン.html' data-id='1656149'><div style='padding-left: 10px'><a href='銀座357＠会員制メンズサロン.html#fc2-1656149'>[1/1] ＼レビュー特典あり！／睾丸マッサージ Vol.13（ジャップカサイ）【会員制メンズサロン 銀座357】</a><span class='seller-name'>（銀座357＠会員制メンズサロン.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('ｍ男のアロマ.html')">ｍ男のアロマ.html (1件)</li>
 <li class='title-entry' data-file='ｍ男のアロマ.html' data-id='1555497'><div style='padding-left: 10px'><a href='ｍ男のアロマ.html#fc2-1555497'>[1/1] 先着50本限定半額！【隠し撮り】ｍ男専用アロマ 唾液手コキ 乳首舐め パンティー見せ 射精後弄り 極上接待【エロカワ小悪魔・三上（20歳）２回目】</a><span class='seller-name'>（ｍ男のアロマ.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('FusionOfAromaMassageAnd.html')">FusionOfAromaMassageAnd.html (2件)</li>
@@ -20267,6 +20324,11 @@
 <li class='title-entry' data-file='メンエスオーナー.html' data-id='1847312'><div style='padding-left: 10px'><a href='メンエスオーナー.html#fc2-1847312'>[2/4] ※期間限定【圧倒的美女】モデル 沙織 １回目！完全顔出し、スタイル抜群な８頭身モデルのセックスを短期極秘流出！</a><span class='seller-name'>（メンエスオーナー.html）</span></div></li>
 <li class='title-entry' data-file='メンエスオーナー.html' data-id='1771405'><div style='padding-left: 10px'><a href='メンエスオーナー.html#fc2-1771405'>[3/4] (流出)※期間限定【メンズエステ講習】プリケツギャル リサ 2回目！お尻がエロすぎるスレンダーギャルの滑らかな腰使い。尻肉が揺れまくる激しいセックス。</a><span class='seller-name'>（メンエスオーナー.html）</span></div></li>
 <li class='title-entry' data-file='メンエスオーナー.html' data-id='1436978'><div style='padding-left: 10px'><a href='メンエスオーナー.html#fc2-1436978'>[4/4] ※期間限定【完全顔出し】ショップ店員 アニメ声の美少女ショップ店員を全裸にしてハメまくりの計３発射！</a><span class='seller-name'>（メンエスオーナー.html）</span></div></li>
+<li class='file-name' onclick="toggleTitles('舌フェチの楽園.html')">舌フェチの楽園.html (4件)</li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='2714921'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-2714921'>[1/4] 【即プレイ】美人音大生みくと即プレイ本番OPで射精！彼氏できたのでエッチだめです…【東京美女の言葉責め手コキ】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1947604'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1947604'>[2/4] 【奇跡の本番OP】激カワ新人えりの本番オプションで昇天！ちょっと目つぶっててください…【東京美女の言葉責め手コキ】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1913436'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1913436'>[3/4] 【東京美女の言葉責め手コキ】激カワ新人えりの素股オプションで射精！ほんとにエッチしてるみた～い【高級オナクラ隠し撮り】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
+<li class='title-entry' data-file='舌フェチの楽園.html' data-id='1653846'><div style='padding-left: 10px'><a href='舌フェチの楽園.html#fc2-1653846'>[4/4] 【東京美女の言葉責め手コキ】激カワ新人えり（22歳）のイチャイチャ手コキで射精！まだ出しちゃダメですよ～【高級オナクラ隠し撮り】</a><span class='seller-name'>（舌フェチの楽園.html）</span></div></li>
 <li class='file-name' onclick="toggleTitles('BigBang2.html')">BigBang2.html (5件)</li>
 <li class='title-entry' data-file='BigBang2.html' data-id='1430641'><div style='padding-left: 10px'><a href='BigBang2.html#fc2-1430641'>[1/5] 【個人撮影】顔出し/めい 大学生21歳/はじめてのデカチン/全身舐め＆フェラたっぷり/生挿入中だしフィニッシュ！</a><span class='seller-name'>（BigBang2.html）</span></div></li>
 <li class='title-entry' data-file='BigBang2.html' data-id='1432972'><div style='padding-left: 10px'><a href='BigBang2.html#fc2-1432972'>[2/5] 【個人撮影】顔出し/痴女系熟女人妻 まや 41歳/モデル体型美魔女に全身舐めさせ超デカチンを生ハメ・大量中出し！！</a><span class='seller-name'>（BigBang2.html）</span></div></li>
@@ -30209,7 +30271,21 @@
         .filter(ul => ul.style.display !== 'none')
         .flatMap(ul => Array.from(ul.querySelectorAll('.title-entry')))
         .filter(item => item.style.display !== 'none');
-      document.getElementById("count-display").textContent = `表示中: ${visibleItems.length} 件（全 9826 件）`;
+      document.getElementById("count-display").textContent = `表示中: ${visibleItems.length} 件（全 9833 件）`;
+    }
+
+    function toggleClearBtn() {
+      const input = document.getElementById("search");
+      const btn = document.querySelector(".clear-btn");
+      btn.style.display = input.value.length > 0 ? "block" : "none";
+    }
+
+    function clearInput() {
+      const input = document.getElementById("search");
+      input.value = "";
+      input.focus();
+      toggleClearBtn();
+      filterList();
     }
 
     function filterList() {
@@ -30278,6 +30354,7 @@
         document.getElementById('search').value = query;
       }
       filterList();
+      toggleClearBtn();
     }
   </script>
 </body>
